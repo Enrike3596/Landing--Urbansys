@@ -1,0 +1,83 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: 'class',
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx,vue}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        "on-primary-fixed-variant": "#07497d",
+        "on-primary": "#ffffff",
+        "on-primary-fixed": "#001c37",
+        "secondary-fixed-dim": "#afcbd8",
+        "tertiary": "#003c27",
+        "inverse-on-surface": "#eff1f3",
+        "on-primary-container": "#8ebdf9",
+        "tertiary-fixed-dim": "#4edea3",
+        "surface-bright": "#f7f9fb",
+        "surface-container-high": "#e6e8ea",
+        "surface-dim": "#d8dadc",
+        "on-error": "#ffffff",
+        "on-surface": "#191c1e",
+        "outline-variant": "#c2c7d1",
+        "on-surface-variant": "#42474f",
+        "tertiary-fixed": "#6ffbbe",
+        "secondary-fixed": "#cbe7f5",
+        "surface-container": "#eceef0",
+        "primary": "#00355f",
+        "on-secondary-container": "#4e6874",
+        "surface-variant": "#e0e3e5",
+        "on-secondary-fixed": "#021f29",
+        "error": "#ba1a1a",
+        "surface-container-lowest": "#ffffff",
+        "on-background": "#191c1e",
+        "surface-container-low": "#f2f4f6",
+        "surface": "#f7f9fb",
+        "primary-fixed-dim": "#a0c9ff",
+        "on-tertiary-fixed-variant": "#005236",
+        "primary-container": "#0f4c81",
+        "surface-tint": "#2d6197",
+        "on-tertiary-fixed": "#002113",
+        "on-error-container": "#93000a",
+        "on-secondary-fixed-variant": "#304a55",
+        "primary-fixed": "#d2e4ff",
+        "error-container": "#ffdad6",
+        "inverse-primary": "#a0c9ff",
+        "outline": "#727780",
+        "on-tertiary": "#ffffff",
+        "on-tertiary-container": "#3dd197",
+        "inverse-surface": "#2d3133",
+        "tertiary-container": "#005539",
+        "secondary-container": "#cbe7f5",
+        "on-secondary": "#ffffff",
+        "surface-container-highest": "#e0e3e5",
+        "background": "#f7f9fb",
+        "secondary": "#48626e"
+      },
+      fontFamily: {
+        "headline": ["Manrope"],
+        "body": ["Inter"],
+        "label": ["Inter"]
+      },
+      borderRadius: {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      boxShadow: {
+        'glow': '0 0 20px rgba(0, 53, 95, 0.3)',
+        'glow-lg': '0 0 40px rgba(0, 53, 95, 0.4)',
+        'dark-glow': '0 0 20px rgba(96, 165, 250, 0.3)',
+        'dark-glow-lg': '0 0 40px rgba(96, 165, 250, 0.4)',
+      },
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/line-clamp'),
+  ],
+}
+
